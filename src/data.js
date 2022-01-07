@@ -1,5 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+let currentDate = new Date();
+
+
 export default 
     {
         lessor: {
@@ -23,14 +26,22 @@ export default
         },
         defaults: {
             currency: "won",
-            billingDate: "17",
+            startDate: "Start Date",
+            endDate: "End date",
             deposit: 100000000,
             monthlyFee: 8000000,
             VAT: "10%",
+            paymentTerm: "UP-FRONT",
+            billingDate: "17",
             penalty: "",
         },
-        
-        startDate: "Start Date",
-        endDate: "End date",
+        statements: {
+            id: 0,
+            date: currentDate,
+            description: "LEASE CHARGE",
+            amount: 8000000,
+            payments: "",
+            dueBalance: 8000000,
+        },
     }
 ;

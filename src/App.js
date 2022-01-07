@@ -2,6 +2,7 @@ import logo from './pngs/logo.png';
 import './App.css';
 import Data from './data';
 import { useState } from 'react';
+import Lessee from './Lessee';
 
 function App() {
   let [d, setD] = useState(Data);
@@ -15,45 +16,11 @@ function App() {
     <div className="invoice">
 
       <div className="logo">
-        <img src={logo} style={{height: "clamp(3rem, 4vw, 5rem)"}} />
+        <img src={logo} style={{height: "clamp(3rem, 20vw, 4rem)"}} />
       </div>
 
-      <div className="receiver-info">
-        <div className="receiver-status2">
-          <h3 className="receiver-status3">LEASE STATUS</h3>
-            <div className="lease-status">
-              <div className="lease">
-                <p>LEASE START :</p>
-                <p>LEASE END :</p>
-                <p>DEPOSIT AMOUNT :</p>  
-                <p>MONTHLY RATE :</p>
-                <p>VAT :</p>
-                <p>PAYMENT TERMS :</p>
-                <p>DUE DATE :</p>
-              </div>
-              <div className="status">
-                <p>17/SEPT/2021</p>
-                <p>16/SEPT/2022</p>
-                <p>{ deposit }</p>
-                <p>{ monthlyFee }</p>
-                <p>{d.defaults.VAT}</p>
-                <p>UP-FRONT</p>
-                <p>EVERY {d.defaults.billingDate}TH</p>
-              </div>
-            </div>
-            
-        </div>
-        
-        <div className="receiver-status">
-          <h2>{d.lessee.englishName}</h2>
-          <p>{d.lessee.companyName}</p>
-          <p>{d.lessee.koreanName}</p>
-          <p>{d.lessee.address}</p>
-          <p>{d.lessee.unitNumber} {d.lessee.postalCode}</p>
-          <p>{d.lessee.companyID}</p>
-        </div>
+      <Lessee />
 
-      </div>
       <div className="table-div">
         <table>
           <thead>

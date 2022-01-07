@@ -11,6 +11,10 @@ import { createStore } from 'redux';
 
 let store = createStore(()=>{ return Data })
 
+function reducer() {
+  return 
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
