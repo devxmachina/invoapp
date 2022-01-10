@@ -11,6 +11,8 @@ import { createStore } from 'redux';
 
 let store = createStore(()=>{ return Data })
 
+console.log("## index.js ##", Data)
+
 function reducer() {
   return 
 }

@@ -1,76 +1,66 @@
 import React from 'react';
 
 
-function StateTable() {
+function StateTable(props) {
+
+    console.log("####", props.records[0].id)
+
+    function currency(a) {
+        return (
+            Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(a)
+        )
+    }
     return (
         <>
-            <div className="table-div">
-                <table>
-                    <thead>
-                        <tr className="t-headrow">
-                            <th scope="col">DATE</th>
-                            <th scope="col">DESCRIPTION</th>
-                            <th scope="col">AMOUNT(+VAT)</th>
-                            <th scope="col">PAYMENTS</th>
-                            <th scope="col">METHOD</th>
-                            <th scope="col">BALANCE DUE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>09-17-2021</td>
-                            <td>LEASE CHARGE</td>
-                            <td>{ monthlyFee }</td>
-                            <td></td>
-                            <td></td>
-                            <td>{ monthlyFee }</td>
-                        </tr>
-                        <tr>
-                            <td>10-16-2021</td>
-                            <td>PAYMENT MADE</td>
-                            <td></td>
-                            <td>{ payment }</td>
-                            <td>CASH</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>10-18-2021</td>
-                            <td>PAYMENT MADE</td>
-                            <td></td>
-                            <td>{ payment }</td>
-                            <td>WIRE</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>01-01-2022</td>
-                            <td>DEDUCT FROM DEPOSIT</td>
-                            <td></td>
-                            <td>{ payment }</td>
-                            <td>DEPOSIT</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>01-01-2022</td>
-                            <td>DAMAGE CHARGE</td>
-                            <td>₩10,000,000</td>
-                            <td></td>
-                            <td></td>
-                            <td>{ damage }</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div className="summary">
-                <div className="summary-topics">
-                    <h3 className="summary-topic">DEPOSIT BALANCE :</h3>
-                    <h3 className="summary-topic">OVERDUE BALANCE :</h3>
-                </div>
-                <div className="summary-data">
-                    <h3>0</h3>
-                    <h3>{ damage }</h3>
-                </div>
-            </div>
+            <tr>
+                <td>{ props.records[0].date }</td>
+                <td>{ props.records[0].description }</td>
+                <td>{ props.records[0].method }</td>
+                <td>{ props.records[0].amount === "" ? null : currency( props.records[0].amount) }</td>
+                <td>{ props.records[0].payment === "" ? null : currency( props.records[0].payment) }</td>
+            </tr>
+            <tr>
+                <td>{ props.records[1].date }</td>
+                <td>{ props.records[1].description }</td>
+                <td>{ props.records[1].method }</td>
+                <td>{ props.records[1].amount === "" ? null : currency( props.records[1].amount) }</td>
+                <td>{ props.records[1].payment === "" ? null : currency( props.records[1].payment) }</td>
+            </tr>
+            <tr>
+                <td>{ props.records[2].date }</td>
+                <td>{ props.records[2].description }</td>
+                <td>{ props.records[2].method }</td>
+                <td>{ props.records[2].amount === "" ? null : currency( props.records[2].amount) }</td>
+                <td>{ props.records[2].payment === "" ? null : currency( props.records[2].payment) }</td>
+            </tr>
+            <tr>
+                <td>{ props.records[3].date }</td>
+                <td>{ props.records[3].description }</td>
+                <td>{ props.records[3].method }</td>
+                <td>{ props.records[3].amount === "" ? null : currency( props.records[3].amount) }</td>
+                <td>{ props.records[3].payment === "" ? null : currency( props.records[3].payment) }</td>
+            </tr>
+            <tr>
+                <td>{ props.records[4].date }</td>
+                <td>{ props.records[4].description }</td>
+                <td>{ props.records[4].method }</td>
+                <td>{ props.records[4].amount === "" ? null : currency( props.records[4].amount) }</td>
+                <td>{ props.records[4].payment === "" ? null : currency( props.records[4].payment) }</td>
+            </tr> 
+            <tr>
+                <td>{ props.records[5].date }</td>
+                <td>{ props.records[5].description }</td>
+                <td>{ props.records[5].method }</td>
+                <td>{ props.records[5].amount === "" ? null : currency( props.records[5].amount) }</td>
+                <td>{ props.records[5].payment === "" ? null : currency( props.records[5].payment) }</td>
+            </tr> 
+            <tr>
+                <td>{ props.records[6].date }</td>
+                <td>{ props.records[6].description }</td>
+                <td>{ props.records[6].method }</td>
+                <td>{ props.records[6].amount === "" ? null : currency( props.records[6].amount) }</td>
+                <td>{ props.records[6].payment === "" ? null : currency( props.records[6].payment) }</td>
+            </tr> 
         </>
     )
 }

@@ -3,8 +3,15 @@ import './App.css';
 import Data from './data';
 import { useState } from 'react';
 import Lessee from './Lessee';
+import StateTable from './StateTable';
+import records from './records';
+import { useSelector } from 'react-redux';
 
-function App() {
+function App(props) {
+
+  let state = useSelector((state)=>state);
+  console.log('## selector ##', state.records);
+
   let [d, setD] = useState(Data);
 
   let deposit = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(d.defaults.deposit)
@@ -27,70 +34,30 @@ function App() {
             <tr className="t-headrow">
               <th scope="col">DATE</th>
               <th scope="col">DESCRIPTION</th>
+              <th scope="col">METHOD</th>
               <th scope="col">AMOUNT(+VAT)</th>
               <th scope="col">PAYMENTS</th>
-              <th scope="col">METHOD</th>
-              <th scope="col">BALANCE DUE</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>09-17-2021</td>
-              <td>LEASE CHARGE</td>
-              <td>{ monthlyFee }</td>
-              <td></td>
-              <td></td>
-              <td>{ monthlyFee }</td>
-            </tr>
-            <tr>
-              <td>10-16-2021</td>
-              <td>PAYMENT MADE</td>
-              <td></td>
-              <td>{ payment }</td>
-              <td>CASH</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>10-18-2021</td>
-              <td>PAYMENT MADE</td>
-              <td></td>
-              <td>{ payment }</td>
-              <td>WIRE</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>01-01-2022</td>
-              <td>DEDUCT FROM DEPOSIT</td>
-              <td></td>
-              <td>{ payment }</td>
-              <td>DEPOSIT</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>01-01-2022</td>
-              <td>DAMAGE CHARGE</td>
-              <td>₩10,000,000</td>
-              <td></td>
-              <td></td>
-              <td>{ damage }</td>
-            </tr>
+            <StateTable records={state.records} />
           </tbody>
         </table>
       </div>
 
       <div className="summary">
           <div className="summary-topics">
-            <h3 className="summary-topic">DEPOSIT BALANCE :</h3>
-            <h3 className="summary-topic">OVERDUE BALANCE :</h3>
+            <h3 className="summary-topic">연체 금액 :</h3>
+            <h3 className="summary-topic">남은 보증금 :</h3>
           </div>
           <div className="summary-data">
-            <h3>0</h3>
             <h3>{ damage }</h3>
+            <h3>{ deposit }</h3>
           </div>
         </div>
       <div className="footer">
-        <p>{d.lessor.address} {d.lessor.unitNumber} {d.lessor.postalCode}</p>
-        <p>{d.lessor.companyID}</p>
+        <p>{state.lessor.address} {state.lessor.unitNumber} {state.lessor.postalCode}</p>
+        <p>{state.lessor.companyID}</p>
       </div>
 
     </div>

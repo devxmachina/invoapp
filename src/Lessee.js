@@ -8,8 +8,6 @@ function Lessee() {
 
     let state = useSelector((state) => state);
 
-    
-
 
     let deposit = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(d.defaults.deposit)
     let monthlyFee = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(d.defaults.monthlyFee)
@@ -22,13 +20,13 @@ function Lessee() {
                 <h3 className="receiver-status3">LEASE STATUS</h3>
                     <div className="lease-status">
                         <div className="lease">
-                            <p>LEASE START :</p>
-                            <p>LEASE END :</p>
-                            <p>DEPOSIT AMOUNT :</p>  
-                            <p>MONTHLY RATE :</p>
+                            <p>임차시작일 :</p>
+                            <p>임대차종료 :</p>
+                            <p>보증금 :</p>  
+                            <p>월세 :</p>
                             <p>VAT :</p>
-                            <p>PAYMENT TERMS :</p>
-                            <p>DUE DATE :</p>
+                            <p>지불방식 :</p>
+                            <p>지불일짜 :</p>
                         </div>
                         <div className="status">
                             <p>17/SEPT/2021</p>
@@ -36,8 +34,8 @@ function Lessee() {
                             <p>{ deposit }</p>
                             <p>{ monthlyFee }</p>
                             <p>{d.defaults.VAT}</p>
-                            <p>UP-FRONT</p>
-                            <p>EVERY {d.defaults.billingDate}TH</p>
+                            <p>선지불</p>
+                            <p>{d.defaults.billingDate}TH</p>
                         </div>
                     </div>
                 
