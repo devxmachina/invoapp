@@ -4,15 +4,12 @@ import Data from './data';
 import { useSelector } from 'react-redux';
 
 function Lessee() {
-    let [d, setD] = useState(Data);
 
     let state = useSelector((state) => state);
 
 
-    let deposit = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(d.defaults.deposit)
-    let monthlyFee = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(d.defaults.monthlyFee)
-    let payment = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(10000000)
-    let damage = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW'}).format(10300000)
+    let deposit = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(state.defaults.deposit)
+    let monthlyFee = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(state.defaults.monthlyFee)
 
     return (
         <div className="receiver-info">
@@ -26,27 +23,27 @@ function Lessee() {
                             <p>월세 :</p>
                             <p>VAT :</p>
                             <p>지불방식 :</p>
-                            <p>지불일짜 :</p>
+                            <p>지불날짜 :</p>
                         </div>
                         <div className="status">
-                            <p>17/SEPT/2021</p>
-                            <p>16/SEPT/2022</p>
+                            <p>{ state.defaults.startDate }</p>
+                            <p>{ state.defaults.endDate }</p>
                             <p>{ deposit }</p>
                             <p>{ monthlyFee }</p>
-                            <p>{d.defaults.VAT}</p>
-                            <p>선지불</p>
-                            <p>{d.defaults.billingDate}TH</p>
+                            <p>{ state.defaults.VAT }</p>
+                            <p>{ state.defaults.paymentTerm }</p>
+                            <p>매월 { state.defaults.billingDate }일</p>
                         </div>
                     </div>
                 
             </div>
             <div className="receiver-status">
-                <h2>{d.lessee.englishName}</h2>
-                <p>{d.lessee.companyName}</p>
-                <p>{d.lessee.koreanName}</p>
-                <p>{d.lessee.address}</p>
-                <p>{d.lessee.unitNumber} {d.lessee.postalCode}</p>
-                <p>{d.lessee.companyID}</p>
+                <h2>{state.lessee.englishName}</h2>
+                <p>{state.lessee.companyName}</p>
+                <p>{state.lessee.koreanName}</p>
+                <p>{state.lessee.address}</p>
+                <p>{state.lessee.unitNumber} {state.lessee.postalCode}</p>
+                <p>{state.lessee.companyID}</p>
             </div>
         </div>
     )

@@ -1,8 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-
-let currentDate = new Date();
-
-
 export default 
     {
         lessor: {
@@ -26,8 +22,8 @@ export default
         },
         defaults: {
             currency: "won",
-            startDate: "Start Date",
-            endDate: "End date",
+            startDate: "",
+            endDate: "09-16-2022",
             deposit: 100000000,
             monthlyFee: 8000000,
             VAT: "10%",
@@ -41,7 +37,7 @@ export default
                 date: "17-09-2021",
                 description: "임대료",
                 method: "",
-                amount: 8000000,
+                amount: 8800000,
                 payment: "",
             },
             {

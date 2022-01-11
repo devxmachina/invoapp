@@ -3,24 +3,39 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Data from './data';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+let default1 = Data
 
-let store = createStore(()=>{ return Data })
-
-console.log("## index.js ##", Data)
-
-function reducer() {
-  return 
+function reducer(state=default1, action) {
+  if (action.type === 'add') {
+    let records = [state.defaults];
+    records[0].startDate = action.payload
+    state.records = records
+    // copy.defaults.startDate = action.payload
+    console.log('records: ', records)
+    return state
+  }
+  return state
 }
+
+let store = createStore(reducer)
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
