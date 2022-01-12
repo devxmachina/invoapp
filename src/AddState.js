@@ -5,6 +5,7 @@ import StateTable from "./StateTable";
 import Logo from './Logo';
 import Summary from "./Summary";
 import Footer from "./Footer";
+import axios from 'axios';
 
 function AddState(props) {
     let state = useSelector((state)=>state);
@@ -15,7 +16,10 @@ function AddState(props) {
             <Logo />
 
             <div>
-                <input onInput={ (e)=>{ dispatch({type: 'add', payload: e.target.value}) } } />
+                <input onInput={ (e)=>{ 
+                    dispatch({type: 'add', payload: e.target.value})
+                    axios.get('#');
+                    } } />
                 <button>저장</button>
             </div>
 
