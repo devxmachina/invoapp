@@ -39,6 +39,7 @@ export default
                 method: "",
                 amount: 8800000,
                 payment: "",
+                paymentStatus: "",
             },
             {
                 id: 1,
@@ -47,6 +48,7 @@ export default
                 method: "CASH",
                 amount: "",
                 payment: 2000000,
+                paymentStatus: "",
             },
             {
                 id: 2,
@@ -55,6 +57,7 @@ export default
                 method: "WIRE",
                 amount: "",
                 payment: 3000000,
+                paymentStatus: "",
             },
             {
                 id: 3,
@@ -63,6 +66,7 @@ export default
                 method: "DEPOSIT",
                 amount: "",
                 payment: 3800000,
+                paymentStatus: "",
             },
             {
                 id: 4,
@@ -71,6 +75,7 @@ export default
                 method: "",
                 amount: 10000000,
                 payment: "",
+                paymentStatus: "",
             },
             {
                 id: 5,
@@ -79,6 +84,7 @@ export default
                 method: "",
                 amount: 1000000,
                 payment: "",
+                paymentStatus: "",
             },
             {
                 id: 6,
@@ -87,6 +93,7 @@ export default
                 method: "",
                 amount: "",
                 payment: "",
+                paymentStatus: "",
             },
         ]
     }
