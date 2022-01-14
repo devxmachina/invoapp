@@ -37,40 +37,35 @@ function Lessee() {
                     </div>                
             </div> */}
 
-            <table className="red-border">
-                <thead>
+            <table className="lease-table">
+                <thead className="lease-status-head">
                     <th scope="column">s</th>
                     <th scope="column">s</th>
                 </thead>
-                    {
-                        state.defaults.map((a,i)=>{
-                            return (
-                                <tbody key={i}>
-                                    <tr>
-                                        <td>임차시작일 :</td><td>{state.defaults[i].startDate}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>임대차종료 :</td><td>{state.defaults[i].endDate}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>보증금 :</td><td>{state.defaults[i].deposit}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>월세 :</td><td>{state.defaults[i].monthlyFee}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>VAT :</td><td>{state.defaults[i]}.VAT</td>
-                                    </tr>
-                                    <tr>
-                                        <td>지불방식 :</td><td>{state.defaults[i].paymentTerm}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>지불날짜 :</td><td>{state.defaults[i].billingDate}</td>
-                                    </tr>
-                                </tbody>
-                            )
-                        })
-                    };
+                    <tbody className="lease-status-body">
+                        <tr>
+                            <td>임차시작일 :</td><td>{state.defaults.startDate}</td>
+                        </tr>
+                        <tr>
+                            <td>임대차종료 :</td><td>{state.defaults.endDate}</td>
+                        </tr>
+                        <tr>
+                            <td>보증금 :</td><td>{state.defaults.deposit}</td>
+                        </tr>
+                        <tr>
+                            <td>월세 :</td><td>{state.defaults.monthlyFee}</td>
+                        </tr>
+                        <tr>
+                            <td>VAT :</td><td>{state.defaults.VAT}</td>
+                        </tr>
+                        <tr>
+                            <td>지불방식 :</td><td>{state.defaults.paymentTerm}</td>
+                        </tr>
+                        <tr>
+                            <td>지불날짜 :</td><td>{state.defaults.billingDate}</td>
+                        </tr>
+                    </tbody>
+
             </table>
 
             <div className="receiver-status">
