@@ -13,7 +13,7 @@ function Lessee() {
 
     return (
         <div className="receiver-info">
-            <div className="receiver-status2">
+            {/* <div className="receiver-status2">
                 <h3 className="receiver-status3">LEASE STATUS</h3>
                     <div className="lease-status">
                         <div className="lease">
@@ -34,9 +34,45 @@ function Lessee() {
                             <p>{ state.defaults.paymentTerm }</p>
                             <p>매월 { state.defaults.billingDate }일</p>
                         </div>
-                    </div>
-                
-            </div>
+                    </div>                
+            </div> */}
+
+            <table className="red-border">
+                <thead>
+                    <th scope="column">s</th>
+                    <th scope="column">s</th>
+                </thead>
+                    {
+                        state.defaults.map((a,i)=>{
+                            return (
+                                <tbody key={i}>
+                                    <tr>
+                                        <td>임차시작일 :</td><td>{state.defaults[i].startDate}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>임대차종료 :</td><td>{state.defaults[i].endDate}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>보증금 :</td><td>{state.defaults[i].deposit}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>월세 :</td><td>{state.defaults[i].monthlyFee}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VAT :</td><td>{state.defaults[i]}.VAT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>지불방식 :</td><td>{state.defaults[i].paymentTerm}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>지불날짜 :</td><td>{state.defaults[i].billingDate}</td>
+                                    </tr>
+                                </tbody>
+                            )
+                        })
+                    };
+            </table>
+
             <div className="receiver-status">
                 <h2>{state.lessee.englishName}</h2>
                 <p>{state.lessee.companyName}</p>
