@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import Data from './data';
-
 import { useSelector } from 'react-redux';
 
 function Lessee() {
 
     let state = useSelector((state) => state);
-
-
     let deposit = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(state.defaults.deposit)
     let monthlyFee = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW' }).format(state.defaults.monthlyFee)
 
@@ -16,7 +11,7 @@ function Lessee() {
             <table className="leaseTable">
                 <span className="statusDefaultsHeading">임대차 명세서</span>
                 <div>
-                    <tbody className="lease-status-body">
+                    <tbody className="leaseStatusBody">
                         <tr>
                             <td className="dataName">임차시작일 :</td><td className="dataVal">{state.defaults.startDate}</td>
                         </tr>
