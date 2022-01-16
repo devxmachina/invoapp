@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   display: flex;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 
@@ -22,55 +23,42 @@ html, body {
 
 }
 
-.lease-table {
-  max-width: 300px;
-  border: 3px solid red;
+.leaseTable {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: clamp(.7rem, 1vw, 1rem );
+  margin: 5% 2px 0px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50px;
 }
 
-.lease-status-head {
-  border: 1px solid blue;
+.statusDefaultsHeading {
+  font-family: 'Ubuntu Condensed', 'Noto Sans KR', sans-serif;
+  font-size: clamp(.8rem, 1.8vw, 1.9rem );
+  font-weight: 700;
+  margin: 10px 0px 10px 0px;
+  color: rgb(20, 20, 20, 70%);
 }
 
-.lease-status-body {
-  border: 2px solid green;
+.dataName {
+  text-align: right;
 }
 
-
+.dataVal {
+  padding-left: 10px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 
 .receiver-status {
+  font-family: 'Ubuntu Condensed', 'Noto Sans KR', sans-serif;
+  font-size: clamp(.8rem, 1.8vw, 1.9rem );
+  text-align: right;
   margin: 15px 30px 15px 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
   min-width: 50px;
-}
-
-.receiver-status2 {
-  padding-left: 15px;
-  margin: 15px 15px 15px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 50px;
-  align-items: center;
-}
-
-.receiver-status3 {
-  padding-left: 20px;
-}
-
-.lease-status {
-  display: flex;
-  flex-direction: row;
-}
-
-.lease {
-  text-align: right;
-}
-
-.status {
-  padding-left: 6px;
 }
 
 p {
@@ -105,9 +93,11 @@ h2, h3 {
 
 .table-div {
   padding: 30px 15px 30px 15px;
+  background-color: rgb(250, 250, 250);
+
 }
 
-table {
+.stateTable {
   margin-top: 3vw;
   table-layout: fixed;
   width: 100%;
@@ -116,64 +106,58 @@ table {
   flex-wrap: wrap;
 }
 
-thead {
+.t-headrow {
   font-family: 'Avenir Next Condensed Medium';
   color: lightgrey;
   font-size: clamp(0.65rem, 1.7vw, 1rem );
   border-bottom: 1px rgba(211, 211, 211, 0.788) solid;
 }
 
-thead th:nth-child(1) {
+.t-headrow :nth-child(1) {
   width: 4%;
   text-align: center;
 }
 
 
-thead th:nth-child(2) {
+.t-headrow :nth-child(2) {
   width: 10%;
   text-align: left;
   padding-left: 10px;
 }
 
-thead th:nth-child(3) {
+.t-headrow :nth-child(3) {
   width: 4%;
   text-align: center;
 }
 
-thead th:nth-child(4) {
+.t-headrow :nth-child(4) {
   width: 4%;
   text-align: center;
 }
 
-thead th:nth-child(5) {
+.t-headrow :nth-child(5) {
   width: 4%;
   text-align: center;
 }
 
-/* thead th:nth-child(6) {
-  width: 4%;
-  text-align: center;
-} */
-
-tbody td {
+.tableData {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: clamp(0.7rem, 1.7vw, .8rem );
 }
 
-tbody td:nth-child(1) {
+.tableData :nth-child(1) {
   width: 4%;
   text-align: center;
   
 }
 
-tbody td:nth-child(2) {
+.tableData :nth-child(2) {
   width: 20%;
   text-align: left;
   padding-left: 10px;
-  
 }
 
-tbody td:nth-child(4) {
+.tableData :nth-child(4) {
   width: 4%;
   text-align: center;
   
@@ -183,7 +167,7 @@ tbody td:nth-child(4) {
   height: 20px;
 }
 
-td {
+.tableData {
   /* font-family: 'Apple LiGothic'; */
   padding: 0px 5px 0px 5px;
   height: 20px;
@@ -201,6 +185,7 @@ td {
   text-align: right;
   color: rgb(20, 20, 20, 70%);
   justify-content: flex-end;
+  background-color: rgb(250, 250, 250);
 }
 
 .summary-topic {

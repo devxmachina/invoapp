@@ -14,7 +14,7 @@ function StateTable(props) {
     return (
         <>
             <div className="table-div">
-                <table>
+                <table className="stateTable">
                     <thead>
                         <tr className="t-headrow">
                             <th scope="col">DATE</th>
@@ -28,7 +28,7 @@ function StateTable(props) {
                         state.records.map((a,i)=>{
                             return (
                                 <tbody key={i}>
-                                    <tr>
+                                    <tr className="tableData">
                                         <td>{ state.records[i].date }</td>
                                         <td>{ state.records[i].description }</td>
                                         <td>{ state.records[i].method }</td>

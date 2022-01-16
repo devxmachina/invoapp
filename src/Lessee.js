@@ -13,63 +13,37 @@ function Lessee() {
 
     return (
         <div className="receiver-info">
-            {/* <div className="receiver-status2">
-                <h3 className="receiver-status3">LEASE STATUS</h3>
-                    <div className="lease-status">
-                        <div className="lease">
-                            <p>임차시작일 :</p>
-                            <p>임대차종료 :</p>
-                            <p>보증금 :</p>  
-                            <p>월세 :</p>
-                            <p>VAT :</p>
-                            <p>지불방식 :</p>
-                            <p>지불날짜 :</p>
-                        </div>
-                        <div className="status">
-                            <p>{ state.defaults.startDate }</p>
-                            <p>{ state.defaults.endDate }</p>
-                            <p>{ deposit }</p>
-                            <p>{ monthlyFee }</p>
-                            <p>{ state.defaults.VAT }</p>
-                            <p>{ state.defaults.paymentTerm }</p>
-                            <p>매월 { state.defaults.billingDate }일</p>
-                        </div>
-                    </div>                
-            </div> */}
-
-            <table className="lease-table">
-                <thead className="lease-status-head">
-                    <th scope="column">s</th>
-                    <th scope="column">s</th>
-                </thead>
+            <table className="leaseTable">
+                <span className="statusDefaultsHeading">임대차 명세서</span>
+                <div>
                     <tbody className="lease-status-body">
                         <tr>
-                            <td>임차시작일 :</td><td>{state.defaults.startDate}</td>
+                            <td className="dataName">임차시작일 :</td><td className="dataVal">{state.defaults.startDate}</td>
                         </tr>
                         <tr>
-                            <td>임대차종료 :</td><td>{state.defaults.endDate}</td>
+                            <td className="dataName">임대차종료 :</td><td className="dataVal">{state.defaults.endDate}</td>
                         </tr>
                         <tr>
-                            <td>보증금 :</td><td>{state.defaults.deposit}</td>
+                            <td className="dataName">보증금 :</td><td className="dataVal">{ deposit }</td>
                         </tr>
                         <tr>
-                            <td>월세 :</td><td>{state.defaults.monthlyFee}</td>
+                            <td className="dataName">월세 :</td><td className="dataVal">{ monthlyFee }</td>
                         </tr>
                         <tr>
-                            <td>VAT :</td><td>{state.defaults.VAT}</td>
+                            <td className="dataName">VAT :</td><td className="dataVal">{state.defaults.VAT}</td>
                         </tr>
                         <tr>
-                            <td>지불방식 :</td><td>{state.defaults.paymentTerm}</td>
+                            <td className="dataName">지불방식 :</td><td className="dataVal">{state.defaults.paymentTerm}</td>
                         </tr>
                         <tr>
-                            <td>지불날짜 :</td><td>{state.defaults.billingDate}</td>
+                            <td className="dataName">지불날짜 :</td><td className="dataVal">{state.defaults.billingDate}</td>
                         </tr>
                     </tbody>
-
+                </div>
             </table>
 
             <div className="receiver-status">
-                <h2>{state.lessee.englishName}</h2>
+                <h2>{state.lessee.koreanName}</h2>
                 <p>{state.lessee.companyName}</p>
                 <p>{state.lessee.koreanName}</p>
                 <p>{state.lessee.address}</p>
