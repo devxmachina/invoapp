@@ -1,0 +1,39 @@
+{
+    "people": [
+        {
+            "name": "bob",
+            "age": 21,
+            "weight": 80
+        },
+        {
+            "name": "anna",
+            "age": 25,
+            "weight": 45
+        },
+        {
+            "name": "andy",
+            "age": 51,
+            "weight": 70
+        },
+        {
+            "name": "\uc548\ub155",
+            "age": 24,
+            "weight": 65
+        },
+        {
+            "name": "\ud55c\ub155",
+            "age": 29,
+            "weight": "50"
+        },
+        {
+            "name": "\ud55c\ub155",
+            "age": 29,
+            "weight": "50"
+        },
+        {
+            "name": "\ud55c\ub155",
+            "age": 29,
+            "weight": "50"
+        }
+    ]
+}
