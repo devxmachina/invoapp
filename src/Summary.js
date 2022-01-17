@@ -17,14 +17,16 @@ function Summary() {
 
     return (
         <div className="summary">
-            <div className="summary-topics">
-                <h3 className="summary-topic">연체 금액 :</h3>
-                <h3 className="summary-topic">남은 보증금 :</h3>
-            </div>
-            <div className="summary-data">
-                <h3>{ 0 }</h3>
-                <h3>{ remaining }</h3>
-            </div>
+            <table>
+                <tr className="summaryTopic">
+                    <h2>연체 금액 :</h2>
+                    <td className="summaryData">{ 0 }</td>
+                </tr>
+                <tr className="summaryTopic">
+                    <h2>남은 보증금 :</h2>
+                    <td className="summaryData">{ remaining }</td>
+                </tr>
+            </table>
         </div>
     )
 }
