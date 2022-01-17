@@ -20,7 +20,7 @@ function StateTable(props) {
                             <th scope="col">DATE</th>
                             <th scope="col">DESCRIPTION</th>
                             <th scope="col">METHOD</th>
-                            <th scope="col">AMOUNT(+VAT)</th>
+                            <th scope="col">AMOUNT</th>
                             <th scope="col">PAYMENTS</th>
                         </tr>
                     </thead>

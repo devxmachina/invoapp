@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import Lessee from './Lessee';
-import StateTable from "./StateTable";
-import Logo from './Logo';
-import Summary from "./Summary";
-import Footer from "./Footer";
+import Lessee from './components/Lessee';
+import StateTable from "./components/StateTable";
+import Logo from './components/Logo';
+import Summary from "./components/Summary";
+import Footer from "./components/Footer";
 
 function Result() {
     let state = useSelector((state)=>state);

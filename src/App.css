@@ -119,7 +119,7 @@ h2, h3 {
 .t-headrow {
   font-family: 'Avenir Next Condensed Medium';
   color: lightgrey;
-  font-size: clamp(0.7rem, 1.7vw, 1rem );
+  font-size: clamp(1rem, 2vw, 1.7rem );
   border-bottom: 1px rgba(211, 211, 211, 0.788) solid;
 }
 

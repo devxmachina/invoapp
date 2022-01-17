@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Result from './Result';
-import AddState from './AddState';
+import Home from './components/Home';
 
 
 
@@ -15,7 +15,7 @@ function App(props) {
   return (
     <>
         <Routes>
-          <Route path="/" element={<AddState />} />
+          <Route path="/" element={<Home />} />
           <Route path="/result" element={<Result />} />
         </Routes>
     </>

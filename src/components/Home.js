@@ -15,13 +15,13 @@ function AddState(props) {
         <div className="invoice">
             <Logo />
 
-            <div>
+            {/* <div>
                 <input onInput={ (e)=>{ 
                     dispatch({type: 'add', payload: e.target.value})
                     axios.get('#');
                     } } />
                 <button>저장</button>
-            </div>
+            </div> */}
 
             <Lessee />
             <StateTable records={state.records} />
