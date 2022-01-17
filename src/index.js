@@ -9,7 +9,7 @@ import {
   Route
 } from "react-router-dom";
 
-import Data from './data';
+import Data from './b/data2.json';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';

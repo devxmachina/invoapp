@@ -38,34 +38,6 @@
             "method": "",
             "amount": "8000000",
             "payment": "",
-            "": ""
-        },
-        {
-            "id": "1",
-            "date": "09-17-2020",
-            "description": "",
-            "": ""
-        },
-        {
-            "id": "0",
-            "date": "09-17-2020",
-            "description": "임대료",
-            "month": "9",
-            "method": "",
-            "amount": "8000000",
-            "payment": "",
-            "lateCnt": "",
-            "paymentStatus": "",
-            "remainDeposit": ""
-        },
-        {
-            "id": "0",
-            "date": "09-17-2020",
-            "description": "임대료",
-            "month": "9",
-            "method": "",
-            "amount": "8000000",
-            "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
             "remainDeposit": ""
