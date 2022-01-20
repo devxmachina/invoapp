@@ -16,6 +16,7 @@ def user_input():
             "description:",
             "month:",
             "amount:",
+            "method:",
             "payment:",
             "lateCnt:",
             "paymentStatus:",
@@ -26,7 +27,7 @@ def user_input():
     i = 0
 
     while (len(keys) != i):
-        list_records += input("`keys[i]`")
+        list_records += input(keys[i]).split()
         i += 1
         
     return list_records
