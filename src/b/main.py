@@ -23,12 +23,13 @@ def user_input():
             ]
     
     list_records = []
+    i = 0
 
-    while (len(keys)):
-        i = 0
-        list_records += input(keys[i])
+    while (len(keys) != i):
+        list_records += input("`keys[i]`")
         i += 1
-        return list_records
+        
+    return list_records
     
 
 
@@ -36,7 +37,7 @@ with open('data2.json', 'r', encoding='UTF-8') as json_file:
     data = json.load(json_file)
     temp = data["records"]
     records = user_input()
-
+    print(records)
     y = {
             "id": records[0],
             "date": records[1],
@@ -51,7 +52,7 @@ with open('data2.json', 'r', encoding='UTF-8') as json_file:
         }
     temp.append(y)
 
-
+write_json(data)
 
 
 
