@@ -30,6 +30,31 @@
         "penalty": ""
     },
     "records": [
-        
+        {
+            "id": [
+                "d"
+            ],
+            "date": [
+                "22"
+            ],
+            "description": [
+                "123123"
+            ],
+            "month": [
+                "1234134"
+            ],
+            "method": [
+                "1254124134"
+            ],
+            "amount": [
+                "gsdfgs"
+            ],
+            "payment": [
+                "ffg"
+            ],
+            "lateCnt": [],
+            "paymentStatus": [],
+            "remainDeposit": []
+        }
     ]
 }
