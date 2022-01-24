@@ -40,10 +40,10 @@ function Lessee() {
             <div className="receiver-status">
                 <h2>{state.lessee.koreanName}</h2>
                 <p>{state.lessee.companyName}</p>
+                <p>{state.lessee.companyID}</p>
                 <p>{state.lessee.koreanName}</p>
                 <p>{state.lessee.address}</p>
                 <p>{state.lessee.unitNumber} {state.lessee.postalCode}</p>
-                <p>{state.lessee.companyID}</p>
             </div>
         </div>
     )

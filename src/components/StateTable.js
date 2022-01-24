@@ -29,11 +29,11 @@ function StateTable(props) {
                             return (
                                 <tbody key={i}>
                                     <tr className="tableData">
-                                        <td>{ state.records[i].date }</td>
-                                        <td>{ state.records[i].description }</td>
-                                        <td>{ state.records[i].method }</td>
-                                        <td>{ state.records[i].amount === "" ? null : currency( state.records[i].amount) }</td>
-                                        <td>{ state.records[i].payment === "" ? null : currency( state.records[i].payment) }</td>
+                                        <td className="datas">{ state.records[i].date }</td>
+                                        <td className="datas">{ state.records[i].description }</td>
+                                        <td className="datas">{ state.records[i].method }</td>
+                                        <td className="datas">{ state.records[i].amount === "" ? null : currency( state.records[i].amount) }</td>
+                                        <td className="datas">{ state.records[i].payment === "" ? null : currency( state.records[i].payment) }</td>
                                     </tr>        
                                 </tbody>
                                 

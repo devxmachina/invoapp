@@ -28,13 +28,8 @@ def user_input():
     i = 0
 
     while (len(keys) != i):
-        temp += input(keys[i]).split()
+        list_records += input(keys[i]).split()
         i += 1
-        print(temp, list_records)
-    
-    for i in temp:
-        list_records += temp[i]
-    print(list_records)
     
     return list_records
     
