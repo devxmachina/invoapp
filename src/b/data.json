@@ -426,14 +426,36 @@
         },
         {
             "id": "26",
-            "date": "",
-            "description": "",
-            "month": "",
+            "date": "05-17-2021",
+            "description": "임차료",
+            "month": "05",
             "method": "",
-            "amount": "",
+            "amount": "8000000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
+            "remainDeposit": "100000000"
+        },{
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "05",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "100000000"
+        },{
+            "id": "",
+            "date": "05-20-2021",
+            "description": "납부",
+            "month": "05",
+            "method": "WIRE",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "3",
+            "paymentStatus": "납부 완료",
             "remainDeposit": "100000000"
         },{
             "id": "",
@@ -448,14 +470,36 @@
             "remainDeposit": "100000000"
         },{
             "id": "",
-            "date": "",
-            "description": "",
-            "month": "",
+            "date": "06-17-2021",
+            "description": "임차료",
+            "month": "06",
             "method": "",
-            "amount": "",
+            "amount": "8000000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
+            "remainDeposit": "100000000"
+        },{
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "06",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "100000000"
+        },{
+            "id": "",
+            "date": "06-21-2021",
+            "description": "납부",
+            "month": "06",
+            "method": "WIRE",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "4",
+            "paymentStatus": "납부 완료",
             "remainDeposit": "100000000"
         },{
             "id": "",
@@ -470,16 +514,39 @@
             "remainDeposit": "100000000"
         },{
             "id": "",
-            "date": "",
-            "description": "",
-            "month": "",
+            "date": "07-17-2021",
+            "description": "임차료",
+            "month": "07",
             "method": "",
-            "amount": "",
+            "amount": "8000000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
             "remainDeposit": "100000000"
         },{
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "07",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "100000000"
+        },{
+            "id": "",
+            "date": "08-17-2021",
+            "description": "보증금 차감",
+            "month": "07",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "31",
+            "paymentStatus": "납부 완료",
+            "remainDeposit": "91200000"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -489,8 +556,67 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
+            "remainDeposit": "91200000"
+        },
+        {
+            "id": "",
+            "date": "08-17-2021",
+            "description": "임차료",
+            "month": "08",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "91200000"
         },{
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "91200000"
+        },{
+            "id": "",
+            "date": "08-17-2021",
+            "description": "납부",
+            "month": "08",
+            "method": "WIRE",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "0",
+            "paymentStatus": "납부 완료",
+            "remainDeposit": "91200000"
+        },
+        {
+            "id": "",
+            "date": "08-23-2021",
+            "description": "미납 관리비",
+            "month": "07",
+            "method": "",
+            "amount": "1540860",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "91200000"
+        },
+        {
+            "id": "",
+            "date": "08-23-2021",
+            "description": "보증금 차감",
+            "month": "08",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1540860",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -500,8 +626,93 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "09-12-2021",
+            "description": "일부 납부",
+            "month": "09",
+            "method": "CASH",
+            "amount": "",
+            "payment": "2000000",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "09-17-2021",
+            "description": "임차료",
+            "month": "09",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "09",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "09-18-2021",
+            "description": "일부 납부",
+            "month": "09",
+            "method": "WIRE",
+            "amount": "",
+            "payment": "5000000",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "09-23-2021",
+            "description": "미납 관리비",
+            "month": "08",
+            "method": "",
+            "amount": "1553900",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "89659140"
+        },
+        {
+            "id": "",
+            "date": "09-23-2021",
+            "description": "보증금 차감",
+            "month": "09",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1553900",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "88105240"
+        },
+        {
+            "id": "",
+            "date": "10-17-2021",
+            "description": "보증금 차감",
+            "month": "09",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1800000",
+            "lateCnt": "30",
+            "paymentStatus": "",
+            "remainDeposit": "86305240"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -511,8 +722,69 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "86305240"
+        },
+        {
+            "id": "",
+            "date": "10-17-2021",
+            "description": "임차료",
+            "month": "10",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "86305240"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "10",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "86305240"
+        },
+        {
+            "id": "",
+            "date": "10-23-2021",
+            "description": "미납 관리비",
+            "month": "09",
+            "method": "",
+            "amount": "1322360",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "86305240"
+        },
+        {
+            "id": "",
+            "date": "10-23-2021",
+            "description": "보증금 차감",
+            "month": "",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1322360",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "84982880"
+        },
+        {
+            "id": "",
+            "date": "11-17-2021",
+            "description": "보증금 차감",
+            "month": "10",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "31",
+            "paymentStatus": "",
+            "remainDeposit": "76182880"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -522,8 +794,69 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "76182880"
+        },
+        {
+            "id": "",
+            "date": "11-17-2021",
+            "description": "임차료",
+            "month": "11",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "76182880"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "11",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "76182880"
+        },
+        {
+            "id": "",
+            "date": "11-23-2021",
+            "description": "미납 관리비",
+            "month": "10",
+            "method": "",
+            "amount": "1080250",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "76182880"
+        },
+        {
+            "id": "",
+            "date": "11-23-2021",
+            "description": "보증금 차감",
+            "month": "",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1080250",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "75102630"
+        },
+        {
+            "id": "",
+            "date": "12-17-2021",
+            "description": "보증금 차감",
+            "month": "11",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "30",
+            "paymentStatus": "",
+            "remainDeposit": "66302630"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -533,8 +866,69 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "66302630"
+        },
+        {
+            "id": "",
+            "date": "12-17-2021",
+            "description": "임차료",
+            "month": "12",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "66302630"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "12",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "66302630"
+        },
+        {
+            "id": "",
+            "date": "12-23-2021",
+            "description": "미납 관리비",
+            "month": "11",
+            "method": "",
+            "amount": "1094880",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "66302630"
+        },
+        {
+            "id": "",
+            "date": "12-23-2021",
+            "description": "보증금 차감",
+            "month": "",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1094880",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "65207750"
+        },
+        {
+            "id": "",
+            "date": "01-17-2022",
+            "description": "보증금 차감",
+            "month": "12",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "31",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -544,8 +938,105 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "01-17-2022",
+            "description": "임차료",
+            "month": "01",
+            "method": "",
+            "amount": "8000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "01",
+            "method": "",
+            "amount": "800000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "01-20-2022",
+            "description": "시설물 원상복구 견적 (₩34,200,000)",
+            "month": "",
+            "method": "",
+            "amount": "",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "01-20-2022",
+            "description": "원상복구 견적 할인 (-₩24,200,000) - 70% OFF -",
+            "month": "",
+            "method": "",
+            "amount": "10000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "VAT 10%",
+            "month": "",
+            "method": "",
+            "amount": "1000000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "56407750"
+        },
+        {
+            "id": "",
+            "date": "01-20-2022",
+            "description": "보증금 차감",
+            "month": "",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "11000000",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "45407750"
+        },
+        {
+            "id": "",
+            "date": "01-23-2022",
+            "description": "미납 관리비",
+            "month": "12",
+            "method": "",
+            "amount": "1100000",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "45407750"
+        },
+        {
+            "id": "",
+            "date": "01-23-2022",
+            "description": "보증금 차감",
+            "month": "",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "1100000",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "45407750"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -555,8 +1046,21 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "45407750"
+        },
+        {
+            "id": "",
+            "date": "02-07-2022",
+            "description": "임차료 (21일분)",
+            "month": "",
+            "method": "",
+            "amount": "5961290.32",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "45407750"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -566,8 +1070,9 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
-        },{
+            "remainDeposit": "45407750"
+        },
+        {
             "id": "",
             "date": "",
             "description": "",
@@ -577,7 +1082,7 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "100000000"
+            "remainDeposit": "45407750"
         }
     ]
 }

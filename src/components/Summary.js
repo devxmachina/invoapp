@@ -8,11 +8,16 @@ function Summary() {
     let payment = 0;
     let deposit = state.defaults.deposit
     let remaining = 0;
+    let currentDeposit = 0;
+    state.records.map((a, i)=>{
+            currentDeposit = state.records[i].remainDeposit
+    })
+
     state.records.map( (a, i) => {
       
       amount += Number(state.records[i].amount)
       payment += Number(state.records[i].payment)
-      remaining = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW'}).format(deposit - (amount - payment))
+      remaining = Intl.NumberFormat('ko-KO', { style: 'currency', currency: 'KRW'}).format(currentDeposit)
     })
 
     return (
