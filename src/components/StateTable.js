@@ -19,9 +19,9 @@ function StateTable(props) {
                         <tr className="t-headrow">
                             <th scope="col">DATE</th>
                             <th scope="col">DESCRIPTION</th>
-                            <th scope="col">METHOD</th>
                             <th scope="col">AMOUNT</th>
                             <th scope="col">PAYMENTS</th>
+                            <th scope="col">DEPOSIT</th>
                         </tr>
                     </thead>
                     {
@@ -31,9 +31,12 @@ function StateTable(props) {
                                     <tr className="tableData">
                                         <td className="datas">{ state.records[i].date }</td>
                                         <td className="datas">{ state.records[i].description }</td>
-                                        <td className="datas">{ state.records[i].method }</td>
+                                        {/* <td className="datas">{ state.records[i].method }</td> */}
                                         <td className="datas">{ state.records[i].amount === "" ? null : currency( state.records[i].amount) }</td>
                                         <td className="datas">{ state.records[i].payment === "" ? null : currency( state.records[i].payment) }</td>
+                                        {/* <td className="datas">{ state.records[i].remainDeposit === state.records[i].remainDeposit ? null : currency( state.records[i].remainDeposit) }</td> */}
+                                        <td className="datas">{ state.records[i].description === "보증금 차감" ? currency( a.remainDeposit) : null}</td>
+                                        { console.log(state.records[i].description === "보증금 차감")}
                                     </tr>        
                                 </tbody>
                                 

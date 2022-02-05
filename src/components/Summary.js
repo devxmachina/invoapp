@@ -23,10 +23,10 @@ function Summary() {
     return (
         <div className="summary">
             <table>
-                <tr className="summaryTopic">
+                {/* <tr className="summaryTopic">
                     <h2>연체 금액 :</h2>
                     <td className="summaryData">{ 0 }</td>
-                </tr>
+                </tr> */}
                 <tr className="summaryTopic">
                     <h2>남은 보증금 :</h2>
                     <td className="summaryData">{ remaining }</td>
