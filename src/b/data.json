@@ -21,12 +21,12 @@
     "defaults": {
         "currency": "won",
         "startDate": "09-17-2020",
-        "endDate": "09-16-2022",
+        "endDate": "02-06-2022",
         "deposit": 100000000,
         "monthlyFee": 8000000,
         "VAT": "10%",
-        "paymentTerm": "UP-FRONT",
-        "billingDate": "17",
+        "paymentTerm": "선납",
+        "billingDate": "17일",
         "penalty": "19.99% /month"
     },
     "records": [
@@ -57,7 +57,7 @@
         {
             "id": "2",
             "date": "09-17-2020",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "09",
             "method": "WIRE",
             "amount": "",
@@ -105,7 +105,7 @@
         {
             "id": "5",
             "date": "10-20-2020",
-            "description": "납부",
+            "description": "임차인 일부 납부",
             "month": "10",
             "method": "WIRE",
             "amount": "",
@@ -117,7 +117,7 @@
         {
             "id": "6",
             "date": "10-20-2020",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "10",
             "method": "WIRE",
             "amount": "",
@@ -165,7 +165,7 @@
         {
             "id": "9",
             "date": "11-17-2020",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "11",
             "method": "WIRE",
             "amount": "",
@@ -213,7 +213,7 @@
         {
             "id": "12",
             "date": "12-17-2020",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "12",
             "method": "WIRE",
             "amount": "",
@@ -261,7 +261,7 @@
         {
             "id": "15",
             "date": "01-18-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "01",
             "method": "WIRE",
             "amount": "",
@@ -309,7 +309,7 @@
         {
             "id": "18",
             "date": "02-22-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "02",
             "method": "WIRE",
             "amount": "",
@@ -355,7 +355,7 @@
         },{
             "id": "21",
             "date": "03-18-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "03",
             "method": "WIRE",
             "amount": "",
@@ -403,11 +403,11 @@
         {
             "id": "24",
             "date": "04-21-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "04",
             "method": "WIRE",
             "amount": "",
-            "payment": "8000000",
+            "payment": "8800000",
             "lateCnt": "",
             "paymentStatus": "납부 완료",
             "remainDeposit": "100000000"
@@ -449,7 +449,7 @@
         },{
             "id": "",
             "date": "05-20-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "05",
             "method": "WIRE",
             "amount": "",
@@ -493,7 +493,7 @@
         },{
             "id": "",
             "date": "06-21-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "06",
             "method": "WIRE",
             "amount": "",
@@ -583,7 +583,7 @@
         },{
             "id": "",
             "date": "08-17-2021",
-            "description": "납부",
+            "description": "임차인 납부",
             "month": "08",
             "method": "WIRE",
             "amount": "",
@@ -595,7 +595,7 @@
         {
             "id": "",
             "date": "08-23-2021",
-            "description": "미납 관리비",
+            "description": "미납 관리비 대납",
             "month": "07",
             "method": "",
             "amount": "1540860",
@@ -631,7 +631,7 @@
         {
             "id": "",
             "date": "09-12-2021",
-            "description": "일부 납부",
+            "description": "임차인 일부 납부",
             "month": "09",
             "method": "CASH",
             "amount": "",
@@ -667,7 +667,7 @@
         {
             "id": "",
             "date": "09-18-2021",
-            "description": "일부 납부",
+            "description": "임차인 일부 납부",
             "month": "09",
             "method": "WIRE",
             "amount": "",
@@ -679,7 +679,7 @@
         {
             "id": "",
             "date": "09-23-2021",
-            "description": "미납 관리비",
+            "description": "미납 관리비 대납",
             "month": "08",
             "method": "",
             "amount": "1553900",
@@ -751,7 +751,7 @@
         {
             "id": "",
             "date": "10-23-2021",
-            "description": "미납 관리비",
+            "description": "미납 관리비 대납",
             "month": "09",
             "method": "",
             "amount": "1322360",
@@ -823,7 +823,7 @@
         {
             "id": "",
             "date": "11-23-2021",
-            "description": "미납 관리비",
+            "description": "미납 관리비 대납",
             "month": "10",
             "method": "",
             "amount": "1080250",
@@ -895,7 +895,7 @@
         {
             "id": "",
             "date": "12-23-2021",
-            "description": "미납 관리비",
+            "description": "미납 관리비 대납",
             "month": "11",
             "method": "",
             "amount": "1094880",
@@ -990,27 +990,15 @@
         },
         {
             "id": "",
-            "date": "",
-            "description": "VAT 10%",
-            "month": "",
-            "method": "",
-            "amount": "1000000",
-            "payment": "",
-            "lateCnt": "",
-            "paymentStatus": "",
-            "remainDeposit": "56407750"
-        },
-        {
-            "id": "",
             "date": "01-20-2022",
             "description": "보증금 차감",
             "month": "",
             "method": "DEPOSIT",
             "amount": "",
-            "payment": "11000000",
+            "payment": "10000000",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "46407750"
         },
         {
             "id": "",
@@ -1022,20 +1010,31 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "46407750"
         },
-
+        {
+            "id": "",
+            "date": "02-07-2022",
+            "description": "보증금 차감",
+            "month": "01",
+            "method": "DEPOSIT",
+            "amount": "",
+            "payment": "8800000",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "37607750"
+        },
         {
             "id": "",
             "date": "02-07-2022",
             "description": "임차료 : 1월17일 ~ 2월06일 (21일)",
             "month": "",
             "method": "",
-            "amount": "5419354.84",
+            "amount": "5600000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "37607750"
         }, 
         {
             "id": "",
@@ -1043,35 +1042,35 @@
             "description": "VAT 10%",
             "month": "",
             "method": "",
-            "amount": "541935.484",
+            "amount": "560000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "37607750"
         },
         {
             "id": "",
             "date": "02-07-2022",
-            "description": "미납 관리비(~02월06일)",
+            "description": "미납 관리비 대납(~02월06일)",
             "month": "",
             "method": "",
             "amount": "2510510",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "37607750"
         },
         {
             "id": "",
             "date": "02-07-2022",
-            "description": "부동산 중개 수수료",
+            "description": "부동산 중개 수수료 대납",
             "month": "",
             "method": "",
             "amount": "8100000",
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "37607750"
         },
         {
             "id": "",
@@ -1083,7 +1082,7 @@
             "payment": "",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "45407750"
+            "remainDeposit": "37607750"
         },
         {
             "id": "",
@@ -1092,10 +1091,34 @@
             "month": "",
             "method": "DEPOSIT",
             "amount": "",
-            "payment": "17381800",
+            "payment": "17580510",
             "lateCnt": "",
             "paymentStatus": "",
-            "remainDeposit": "28025950"
+            "remainDeposit": "20027240"
+        },
+        {
+            "id": "",
+            "date": "",
+            "description": "",
+            "month": "",
+            "method": "",
+            "amount": "",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "20027240"
+        },
+        {
+            "id": "",
+            "date": "02-07-2022",
+            "description": "장기수선충당금(REBATE) +₩1,440,380",
+            "month": "",
+            "method": "",
+            "amount": "",
+            "payment": "",
+            "lateCnt": "",
+            "paymentStatus": "",
+            "remainDeposit": "21467620"
         }
     ]
 }
